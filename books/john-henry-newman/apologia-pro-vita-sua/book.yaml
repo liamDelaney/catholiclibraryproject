@@ -1,0 +1,39 @@
+slug: apologia-pro-vita-sua
+author: john-henry-newman
+path: newman
+order: 1
+status: draft
+original:
+  year: 1864
+  language: en
+edition:
+  source: "Longmans, Green, and Co., London, 1890 (from the title page reproduced in the transcription)"
+rights:
+  basis: "Published before 1931"
+  checked: 2026-11-10
+  note: "Public domain in the United States. Readers elsewhere should check their own law."
+provenance:
+  transcription: project-gutenberg
+  transcription_label: "Project Gutenberg #22088"
+  transcription_url: "https://www.gutenberg.org/ebooks/22088"
+  converted_with: "tools/ingest/apologia_pg22088.py, then Standard Ebooks tools 4.1.0 (typogrify, modernize-spelling, semanticate, clean)"
+  corrections: 1
+  scan_url: "[URL: a scan of the 1890 Longmans edition, to proof against]"
+text_standard: modernized
+addressing: chapter-paragraph
+cover:
+  file: null
+  title: "[PAINTING]"
+  artist: "[ARTIST]"
+  institution: "[MUSEUM]"
+  source_url: "[URL]"
+  terms: "[TERMS]"
+description:
+  text: >-
+    Apologia Pro Vita Sua is Newman's history of his religious opinions, from
+    his childhood to his reception into the Catholic Church in 1845. He wrote
+    it in 1864 in reply to Charles Kingsley, who had charged him with
+    indifference to truth. This edition has a preface, five chapters, seven
+    notes, supplemental matter and eight additional notes.
+  drafted_by: model
+  reviewed: null

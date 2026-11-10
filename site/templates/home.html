@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block body %}
+<header class="site-header"><div class="wrap bar">
+<a class="wordmark" href="{{ root }}{{ link('') }}">{{ site.name }}</a>
+</div></header>
+<main class="wrap">
+<h1 class="page-title">Library</h1>
+<ul class="book-list">
+{% for book in books %}
+<li><a href="{{ root }}{{ link(book.url) }}"><span class="book-list-title">{{ book.title }}</span><span class="meta">{{ book.author.name }} · {{ book.meta.original.year }}</span></a></li>
+{% endfor %}
+</ul>
+</main>
+{% endblock %}

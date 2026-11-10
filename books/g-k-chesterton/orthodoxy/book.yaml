@@ -1,0 +1,41 @@
+slug: orthodoxy
+author: g-k-chesterton
+path: modern-letters
+order: 2
+status: draft
+original:
+  year: 1908
+  language: en
+edition:
+  source: "[SOURCE EDITION AND YEAR: identify from the title page of the scan]"
+rights:
+  basis: "Published in the US before 1931"
+  checked: 2026-11-10
+  note: "Public domain in the United States. Readers elsewhere should check their own law."
+provenance:
+  transcription: standard-ebooks
+  transcription_url: "https://standardebooks.org/ebooks/g-k-chesterton/orthodoxy"
+  upstream_repository: "https://github.com/standardebooks/g-k-chesterton_orthodoxy"
+  upstream_commit: a4af41fb3e53ec19501484bcc7b9bcf9c64c4e47
+  sources:
+    - {label: "Project Gutenberg", url: "https://www.gutenberg.org/ebooks/16769"}
+    - {label: "Internet Archive", url: "https://archive.org/details/orthodoxy0000ches"}
+text_standard: modernized
+addressing: chapter-paragraph
+cover:
+  file: images/cover.jpg
+  title: "Christ Healing the Blind"
+  artist: "El Greco"
+  year: 1570
+  institution: "[MUSEUM: several versions of this painting exist; confirm which this is]"
+  source_url: "[URL]"
+  terms: "[TERMS]"
+description:
+  text: >-
+    Orthodoxy is a work of Christian apologetics written as a personal
+    intellectual history. Chesterton published it in 1908 as a companion to
+    Heretics, after critics complained that the earlier book attacked current
+    philosophies without offering one of its own. It has a preface and nine
+    chapters.
+  drafted_by: model
+  reviewed: null

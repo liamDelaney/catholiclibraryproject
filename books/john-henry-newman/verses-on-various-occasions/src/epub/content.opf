@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" dir="ltr" prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#" unique-identifier="uid" version="3.0" xml:lang="en-US">
+	<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+		<dc:identifier id="uid">https://standardebooks.org/ebooks/john-henry-newman/verses-on-various-occasions</dc:identifier>
+		<dc:date>2021-01-06T19:08:24Z</dc:date>
+		<meta property="dcterms:modified">2021-01-06T19:08:24Z</meta>
+		<dc:rights>The source text and artwork in this ebook are believed to be in the United States public domain; that is, they are believed to be free of copyright restrictions in the United States. They may still be copyrighted in other countries, so users located outside of the United States must check their local laws before using this ebook. The creators of, and contributors to, this ebook dedicate their contributions to the worldwide public domain via the terms in the [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/).</dc:rights>
+		<meta property="rdf:type">http://schema.org/Book</meta>
+		<dc:publisher id="publisher">Standard Ebooks</dc:publisher>
+		<meta property="file-as" refines="#publisher">Standard Ebooks</meta>
+		<link href="https://standardebooks.org/" refines="#publisher" rel="schema:url"/>
+		<meta property="role" refines="#publisher" scheme="marc:relators">bkd</meta>
+		<meta property="role" refines="#publisher" scheme="marc:relators">mdc</meta>
+		<meta property="role" refines="#publisher" scheme="marc:relators">pbl</meta>
+		<dc:contributor id="type-designer">The League of Moveable Type</dc:contributor>
+		<meta property="file-as" refines="#type-designer">League of Moveable Type, The</meta>
+		<link href="https://www.theleagueofmoveabletype.com/" refines="#type-designer" rel="schema:url"/>
+		<meta property="role" refines="#type-designer" scheme="marc:relators">tyd</meta>
+		<meta id="conformance-statement" property="dcterms:conformsTo">EPUB Accessibility 1.1 - WCAG 2.2 Level AA</meta>
+		<meta property="a11y:certifiedBy" refines="#conformance-statement">Standard Ebooks</meta>
+		<meta property="schema:accessMode">textual</meta>
+		<meta property="schema:accessMode">visual</meta>
+		<meta property="schema:accessModeSufficient">textual</meta>
+		<meta property="schema:accessibilityFeature">alternativeText</meta>
+		<meta property="schema:accessibilityFeature">displayTransformability</meta>
+		<meta property="schema:accessibilityFeature">readingOrder</meta>
+		<meta property="schema:accessibilityFeature">structuralNavigation</meta>
+		<meta property="schema:accessibilityFeature">tableOfContents</meta>
+		<meta property="schema:accessibilityFeature">unlocked</meta>
+		<meta property="schema:accessibilityHazard">none</meta>
+		<meta property="schema:accessibilitySummary">This publication conforms to WCAG 2.2 Level AA.</meta>
+		<dc:title id="title">Verses on Various Occasions</dc:title>
+		<meta property="file-as" refines="#title">Verses on Various Occasions</meta>
+		<dc:subject id="subject-1">Christian poetry, English--19th century</dc:subject>
+		<meta property="authority" refines="#subject-1">LCSH</meta>
+		<meta property="term" refines="#subject-1">sh85025157</meta>
+		<meta property="schema:genre">Poetry</meta>
+		<meta property="schema:genre">Spirituality</meta>
+		<meta property="schema:additionalType">http://schema.org/Collection</meta>
+		<meta property="schema:abstract">A collection of poems by John Henry Newman.</meta>
+		<dc:description>
+			&lt;p&gt;&lt;i&gt;Verses on Various Occasions&lt;/i&gt; is a collection of poems written by &lt;a href="https://standardebooks.org/ebooks/john-henry-newman"&gt;John Henry Newman&lt;/a&gt; between 1818 and 1865. This period of Newman’s ecclesiastical career saw his ordination as an Anglican priest in 1825, his involvement in the High Church “Oxford Movement” in the 1830s, his conversion to Roman Catholicism in 1845, and his founding of the Birmingham Oratory, a Catholic religious community, in 1849.&lt;/p&gt;
+			&lt;p&gt;The poems in this collection span a range of Christian subjects, including piety, biblical prophets, Church Fathers, and Newman’s evolving views on the Catholic Church. Some noteworthy inclusions are “The Pillar of the Cloud,” which has been set to music as the hymn “Lead, Kindly Light,” and “The Dream of Gerontius,” which relates a man’s journey into the afterlife, inspired by &lt;a href="https://standardebooks.org/ebooks/dante-alighieri"&gt;Dante’s&lt;/a&gt; &lt;a href="https://standardebooks.org/ebooks/dante-alighieri/the-divine-comedy/henry-wadsworth-longfellow"&gt;&lt;i&gt;Divine Comedy&lt;/i&gt;&lt;/a&gt;.&lt;/p&gt;
+		</dc:description>
+		<dc:language>en-GB</dc:language>
+		<dc:source>http://www.newmanreader.org/works/verses</dc:source>
+		<dc:source>https://catalog.hathitrust.org/Record/009038168</dc:source>
+		<dc:source>https://www.gutenberg.org/ebooks/48927</dc:source>
+		<dc:source>https://archive.org/details/dreamofgerontius01newmuoft</dc:source>
+		<meta property="schema:wordCount">33303</meta>
+		<meta property="schema:educationalLevel">76.86</meta>
+		<link href="https://en.wikipedia.org/wiki/The_Dream_of_Gerontius_(poem)" rel="schema:sameAs"/>
+		<meta id="vcs-repository" property="schema:workExample">schema:workExample</meta>
+		<meta property="rdf:type" refines="#vcs-repository">http://schema.org/SoftwareSourceCode</meta>
+		<link href="https://github.com/standardebooks/john-henry-newman_verses-on-various-occasions" refines="#vcs-repository" rel="schema:codeRepository"/>
+		<dc:creator id="author">John Henry Newman</dc:creator>
+		<meta property="file-as" refines="#author">Newman, John Henry</meta>
+		<link href="https://en.wikipedia.org/wiki/John_Henry_Newman" refines="#author" rel="schema:sameAs"/>
+		<link href="https://id.loc.gov/authorities/names/n78095501.html" refines="#author" rel="schema:sameAs"/>
+		<meta property="role" refines="#author" scheme="marc:relators">aut</meta>
+		<meta property="role" refines="#author" scheme="marc:relators">dto</meta>
+		<dc:contributor id="artist">Corrado Giaquinto</dc:contributor>
+		<meta property="file-as" refines="#artist">Giaquinto, Corrado</meta>
+		<link href="https://en.wikipedia.org/wiki/Corrado_Giaquinto" refines="#artist" rel="schema:sameAs"/>
+		<link href="https://id.loc.gov/authorities/names/n85265498.html" refines="#artist" rel="schema:sameAs"/>
+		<meta property="role" refines="#artist" scheme="marc:relators">art</meta>
+		<dc:contributor id="annotator-1">Maurice Francis Egan</dc:contributor>
+		<meta property="file-as" refines="#annotator-1">Egan, Maurice Francis</meta>
+		<link href="https://en.wikipedia.org/wiki/Maurice_F._Egan" refines="#annotator-1" rel="schema:sameAs"/>
+		<link href="https://id.loc.gov/authorities/names/n79021768.html" refines="#annotator-1" rel="schema:sameAs"/>
+		<meta property="role" refines="#annotator-1" scheme="marc:relators">ann</meta>
+		<dc:contributor id="transcriber-1">Paul Zadik</dc:contributor>
+		<meta property="file-as" refines="#transcriber-1">Zadik, Paul</meta>
+		<meta property="role" refines="#transcriber-1" scheme="marc:relators">trc</meta>
+		<dc:contributor id="transcriber-2">The National Institute for Newman Studies</dc:contributor>
+		<meta property="file-as" refines="#transcriber-2">National Institute for Newman Studies, The</meta>
+		<link href="https://www.newmanstudies.org/" refines="#transcriber-2" rel="schema:url"/>
+		<meta property="role" refines="#transcriber-2" scheme="marc:relators">trc</meta>
+		<dc:contributor id="transcriber-3">Andrew Sly</dc:contributor>
+		<meta property="file-as" refines="#transcriber-3">Sly, Andrew</meta>
+		<meta property="role" refines="#transcriber-3" scheme="marc:relators">trc</meta>
+		<dc:contributor id="transcriber-4">Christopher Weight</dc:contributor>
+		<meta property="file-as" refines="#transcriber-4">Weight, Christopher</meta>
+		<meta property="role" refines="#transcriber-4" scheme="marc:relators">trc</meta>
+		<dc:contributor id="transcriber-5">Al Haines</dc:contributor>
+		<meta property="file-as" refines="#transcriber-5">Haines, Al</meta>
+		<meta property="role" refines="#transcriber-5" scheme="marc:relators">trc</meta>
+		<dc:contributor id="transcriber-6">Distributed Proofreaders</dc:contributor>
+		<meta property="file-as" refines="#transcriber-6">Distributed Proofreaders</meta>
+		<link href="https://www.pgdp.net/" refines="#transcriber-6" rel="schema:url"/>
+		<meta property="role" refines="#transcriber-6" scheme="marc:relators">trc</meta>
+		<dc:contributor id="producer-1">Weijia Cheng</dc:contributor>
+		<meta property="file-as" refines="#producer-1">Cheng, Weijia</meta>
+		<link href="https://weijiarhymeswith.asia/" refines="#producer-1" rel="schema:url"/>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">bkp</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">blw</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">cov</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">mcp</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">mrk</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">pfr</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">tyg</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">wat</meta>
+		<dc:contributor id="producer-2">Vince Rice</dc:contributor>
+		<meta property="file-as" refines="#producer-2">Rice, Vince</meta>
+		<link href="https://www.brokenandsaved.com/" refines="#producer-2" rel="schema:url"/>
+		<meta property="role" refines="#producer-2" scheme="marc:relators">pfr</meta>
+	</metadata>
+	<manifest>
+		<item href="css/core.css" id="core.css" media-type="text/css"/>
+		<item href="css/local.css" id="local.css" media-type="text/css"/>
+		<item href="css/se.css" id="se.css" media-type="text/css"/>
+		<item href="images/cover.svg" id="cover.svg" media-type="image/svg+xml" properties="cover-image"/>
+		<item href="images/illustration-1.svg" id="illustration-1.svg" media-type="image/svg+xml"/>
+		<item href="images/illustration-2.svg" id="illustration-2.svg" media-type="image/svg+xml"/>
+		<item href="images/illustration-3.svg" id="illustration-3.svg" media-type="image/svg+xml"/>
+		<item href="images/illustration-4.svg" id="illustration-4.svg" media-type="image/svg+xml"/>
+		<item href="images/illustration-5.svg" id="illustration-5.svg" media-type="image/svg+xml"/>
+		<item href="images/illustration-6.svg" id="illustration-6.svg" media-type="image/svg+xml"/>
+		<item href="images/illustration-7.svg" id="illustration-7.svg" media-type="image/svg+xml"/>
+		<item href="images/illustration-8.svg" id="illustration-8.svg" media-type="image/svg+xml"/>
+		<item href="images/illustration-9.svg" id="illustration-9.svg" media-type="image/svg+xml"/>
+		<item href="images/illustration-10.svg" id="illustration-10.svg" media-type="image/svg+xml"/>
+		<item href="images/illustration-11.svg" id="illustration-11.svg" media-type="image/svg+xml"/>
+		<item href="images/illustration-12.svg" id="illustration-12.svg" media-type="image/svg+xml"/>
+		<item href="images/logo.svg" id="logo.svg" media-type="image/svg+xml"/>
+		<item href="images/titlepage.svg" id="titlepage.svg" media-type="image/svg+xml"/>
+		<item href="text/colophon.xhtml" id="colophon.xhtml" media-type="application/xhtml+xml" properties="svg"/>
+		<item href="text/dedication.xhtml" id="dedication.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/endnotes.xhtml" id="endnotes.xhtml" media-type="application/xhtml+xml" properties="svg"/>
+		<item href="text/epigraph.xhtml" id="epigraph.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/halftitlepage.xhtml" id="halftitlepage.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/imprint.xhtml" id="imprint.xhtml" media-type="application/xhtml+xml" properties="svg"/>
+		<item href="text/the-dream-of-gerontius.xhtml" id="the-dream-of-gerontius.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/titlepage.xhtml" id="titlepage.xhtml" media-type="application/xhtml+xml" properties="svg"/>
+		<item href="text/uncopyright.xhtml" id="uncopyright.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/verses-on-various-occasions.xhtml" id="verses-on-various-occasions.xhtml" media-type="application/xhtml+xml"/>
+		<item href="toc.xhtml" id="toc.xhtml" media-type="application/xhtml+xml" properties="nav"/>
+	</manifest>
+	<spine>
+		<itemref idref="titlepage.xhtml"/>
+		<itemref idref="imprint.xhtml"/>
+		<itemref idref="epigraph.xhtml"/>
+		<itemref idref="dedication.xhtml"/>
+		<itemref idref="halftitlepage.xhtml"/>
+		<itemref idref="verses-on-various-occasions.xhtml"/>
+		<itemref idref="the-dream-of-gerontius.xhtml"/>
+		<itemref idref="endnotes.xhtml"/>
+		<itemref idref="colophon.xhtml"/>
+		<itemref idref="uncopyright.xhtml"/>
+	</spine>
+</package>

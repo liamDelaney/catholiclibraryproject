@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block lang %}{{ section.lang or 'en' }}{% endblock %}
+{% block title %}{{ section.label or section.title }} · {{ book.title }} · {{ site.name }}{% endblock %}
+{% block body_class %}reading{% endblock %}
+{% macro name(s) %}{% if s.division %}{{ s.division.label or s.division.title }}, {% endif %}{% if s.long_title %}{{ s.label }}{% else %}{% if s.ordinal %}{{ s.ordinal }} · {% endif %}{{ s.title }}{% endif %}{% endmacro %}
+{% block body %}
+<header class="site-header"><div class="wrap bar reading-bar">
+<a class="back" href="../{{ link('') }}">
+<svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 3 5 8l5 5"></path></svg>
+<span>{{ book.title }}</span>
+</a>
+<div class="meta where">{{ name(section) }}</div>
+<div class="controls">
+<a class="control" href="../{{ link('') }}#contents">Contents</a>
+<button type="button" class="control" id="smaller" aria-label="Smaller text">A−</button>
+<button type="button" class="control" id="larger" aria-label="Larger text">A+</button>
+</div>
+</div></header>
+
+<main class="measure" id="text">
+<div class="chapter-head">
+{% if section.label or section.division %}<div class="eyebrow">{% if section.division %}{{ section.division.label or section.division.title }}{% if section.label %} · {% endif %}{% endif %}{{ section.label or '' }}</div>{% endif %}
+<h1{% if section.long_title %} class="long"{% endif %}>{{ section.title }}</h1>
+{% if section.subtitle %}<p class="subtitle">{{ section.subtitle }}</p>{% endif %}
+<div class="rule" aria-hidden="true"></div>
+</div>
+
+<div class="text kind-{{ section.css }}">
+{{ section.html | safe }}
+</div>
+
+{% if section.notes %}
+<section aria-label="Notes" class="notes">
+<ol>
+{% for note in section.notes %}{{ note.html | safe }}
+{% endfor %}
+</ol>
+</section>
+{% endif %}
+
+<nav aria-label="Sections" class="pager">
+{% if previous %}<a href="../{{ link(previous.slug) }}"><span class="pager-label">Previous</span><span>{{ name(previous) }}</span></a>{% else %}<span></span>{% endif %}
+{% if next %}<a class="next" href="../{{ link(next.slug) }}"><span class="pager-label">Next</span><span>{{ name(next) }}</span></a>{% endif %}
+</nav>
+</main>
+
+<script>
+(function () {
+  var el = document.getElementById('text'), size = 21;
+  try { size = parseInt(localStorage.getItem('textSize'), 10) || 21; } catch (e) {}
+  function apply() { el.style.fontSize = size + 'px'; try { localStorage.setItem('textSize', size); } catch (e) {} }
+  document.getElementById('smaller').addEventListener('click', function () { size = Math.max(16, size - 1); apply(); });
+  document.getElementById('larger').addEventListener('click', function () { size = Math.min(28, size + 1); apply(); });
+  apply();
+})();
+</script>
+{% endblock %}

@@ -1,0 +1,44 @@
+slug: verses-on-various-occasions
+author: john-henry-newman
+path: newman
+order: 5
+status: draft
+original:
+  # From memory, not from the source files: confirm the year of first publication.
+  year: 1868
+  language: en
+edition:
+  source: "The 1903 edition, according to the Standard Ebooks colophon. [CONFIRM from the title page of the scan]"
+rights:
+  basis: "Published before 1931"
+  checked: 2026-11-10
+  note: "Public domain in the United States. Readers elsewhere should check their own law."
+provenance:
+  transcription: standard-ebooks
+  transcription_url: "https://standardebooks.org/ebooks/john-henry-newman/verses-on-various-occasions"
+  upstream_repository: "https://github.com/standardebooks/john-henry-newman_verses-on-various-occasions"
+  upstream_commit: 74d47741a0980c3712c1f62d1394c569ca46f50d
+  sources:
+    - {label: "Newman Reader", url: "http://www.newmanreader.org/works/verses"}
+    - {label: "HathiTrust", url: "https://catalog.hathitrust.org/Record/009038168"}
+    - {label: "Project Gutenberg", url: "https://www.gutenberg.org/ebooks/48927"}
+    - {label: "Internet Archive", url: "https://archive.org/details/dreamofgerontius01newmuoft"}
+text_standard: exempt
+text_standard_note: "Verse: taken as edited by Standard Ebooks, with no further modernization"
+addressing: chapter-paragraph
+cover:
+  file: images/cover.jpg
+  title: "The Trinity with Souls in Purgatory"
+  artist: "Corrado Giaquinto"
+  year: "early 1740s"
+  institution: "[MUSEUM]"
+  source_url: "[URL]"
+  terms: "[TERMS]"
+description:
+  text: >-
+    Verses on Various Occasions is Newman's collected poetry, arranged in
+    order of composition with the place and date of each piece. It spans his
+    Anglican and Catholic years and ends with The Dream of Gerontius, a
+    dramatic poem in seven parts on the death and judgment of a soul.
+  drafted_by: model
+  reviewed: null

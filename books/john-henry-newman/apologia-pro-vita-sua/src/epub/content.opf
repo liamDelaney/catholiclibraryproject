@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" dir="ltr" prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#" unique-identifier="uid" version="3.0" xml:lang="en-US">
+	<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+		<dc:identifier id="uid">john-henry-newman/apologia-pro-vita-sua</dc:identifier>
+		<dc:date>1900-01-01T00:00:00Z</dc:date>
+		<meta property="dcterms:modified">1900-01-01T00:00:00Z</meta>
+		<dc:rights>RIGHTS</dc:rights>
+		<meta property="rdf:type">http://schema.org/Book</meta>
+		<dc:publisher id="publisher">PUBLISHER_NAME</dc:publisher>
+		<meta property="file-as" refines="#publisher">PUBLISHER_SORT</meta>
+		<link href="PUBLISHER_URL" refines="#publisher" rel="schema:url"/>
+		<link href="http://www.idpf.org/epub/a11y/accessibility-20170105.html#wcag-aa" rel="dcterms:conformsTo"/>
+		<meta property="a11y:certifiedBy">PUBLISHER_NAME</meta>
+		<meta property="schema:accessMode">textual</meta>
+		<meta property="schema:accessModeSufficient">textual</meta>
+		<meta property="schema:accessibilityFeature">alternativeText</meta>
+		<meta property="schema:accessibilityFeature">displayTransformability</meta>
+		<meta property="schema:accessibilityFeature">readingOrder</meta>
+		<meta property="schema:accessibilityFeature">structuralNavigation</meta>
+		<meta property="schema:accessibilityFeature">tableOfContents</meta>
+		<meta property="schema:accessibilityHazard">none</meta>
+		<meta property="schema:accessibilitySummary">This publication conforms to WCAG 2.2 Level AA.</meta>
+		<dc:title id="title">Apologia Pro Vita Sua</dc:title>
+		<meta property="file-as" refines="#title">Apologia Pro Vita Sua</meta>
+		<dc:subject id="subject-1">SUBJECT_1</dc:subject>
+		<dc:subject id="subject-2">SUBJECT_2</dc:subject>
+		<meta property="authority" refines="#subject-1">LCSH</meta>
+		<meta property="term" refines="#subject-1">SUBJECT_1_LCSH_ID</meta>
+		<meta property="authority" refines="#subject-2">LCSH</meta>
+		<meta property="term" refines="#subject-2">SUBJECT_2_LCSH_ID</meta>
+		<meta property="schema:abstract">ABSTRACT</meta>
+		<dc:description>
+			DESCRIPTION
+		</dc:description>
+		<dc:language>en-GB</dc:language>
+		<dc:source>https://www.gutenberg.org/ebooks/22088</dc:source>
+		<dc:source>PAGE_SCANS_URL</dc:source>
+		<meta property="schema:wordCount">140055</meta>
+		<link href="EBOOK_WIKI_URL" rel="schema:sameAs"/>
+		<dc:creator id="author">John Henry Newman</dc:creator>
+		<meta property="file-as" refines="#author">Newman, John Henry</meta>
+		<meta property="schema:alternateName" refines="#author">CONTRIBUTOR_FULL_NAME</meta>
+		<link href="CONTRIBUTOR_WIKI_URL" refines="#author" rel="schema:sameAs"/>
+		<link href="CONTRIBUTOR_NACOAF_URI" refines="#author" rel="schema:sameAs"/>
+		<meta property="role" refines="#author" scheme="marc:relators">aut</meta>
+		<dc:contributor id="artist">COVER_ARTIST_NAME</dc:contributor>
+		<meta property="file-as" refines="#artist">COVER_ARTIST_SORT</meta>
+		<link href="COVER_ARTIST_WIKI_URL" refines="#artist" rel="schema:sameAs"/>
+		<link href="COVER_ARTIST_NACOAF_URI" refines="#artist" rel="schema:sameAs"/>
+		<meta property="role" refines="#artist" scheme="marc:relators">art</meta>
+		<dc:contributor id="producer-1">PRODUCER_NAME</dc:contributor>
+		<meta property="file-as" refines="#producer-1">PRODUCER_SORT</meta>
+		<link href="PRODUCER_URL" refines="#producer-1" rel="schema:url"/>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">bkp</meta>
+	</metadata>
+	<manifest>
+		<item href="css/core.css" id="core.css" media-type="text/css"/>
+		<item href="css/local.css" id="local.css" media-type="text/css"/>
+		<item href="images/cover.jpg" id="cover.jpg" media-type="image/jpeg" properties="cover-image"/>
+		<item href="text/additional-note-1.xhtml" id="additional-note-1.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/additional-note-2.xhtml" id="additional-note-2.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/additional-note-3.xhtml" id="additional-note-3.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/additional-note-4.xhtml" id="additional-note-4.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/additional-note-5.xhtml" id="additional-note-5.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/additional-note-6.xhtml" id="additional-note-6.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/additional-note-7.xhtml" id="additional-note-7.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/additional-note-8.xhtml" id="additional-note-8.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/additional-notes.xhtml" id="additional-notes.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-1.xhtml" id="chapter-1.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-2.xhtml" id="chapter-2.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-3.xhtml" id="chapter-3.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-4.xhtml" id="chapter-4.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-5.xhtml" id="chapter-5.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/colophon.xhtml" id="colophon.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/endnotes.xhtml" id="endnotes.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/note-a.xhtml" id="note-a.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/note-b.xhtml" id="note-b.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/note-c.xhtml" id="note-c.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/note-d.xhtml" id="note-d.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/note-e.xhtml" id="note-e.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/note-f.xhtml" id="note-f.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/note-g.xhtml" id="note-g.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/notes.xhtml" id="notes.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/preface.xhtml" id="preface.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/supplemental-matter-1.xhtml" id="supplemental-matter-1.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/supplemental-matter-2.xhtml" id="supplemental-matter-2.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/supplemental-matter-3.xhtml" id="supplemental-matter-3.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/supplemental-matter-4.xhtml" id="supplemental-matter-4.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/supplemental-matter.xhtml" id="supplemental-matter.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/titlepage.xhtml" id="titlepage.xhtml" media-type="application/xhtml+xml"/>
+		<item href="toc.xhtml" id="toc.xhtml" media-type="application/xhtml+xml" properties="nav"/>
+	</manifest>
+	<spine>
+		<itemref idref="titlepage.xhtml"/>
+		<itemref idref="preface.xhtml"/>
+		<itemref idref="chapter-1.xhtml"/>
+		<itemref idref="chapter-2.xhtml"/>
+		<itemref idref="chapter-3.xhtml"/>
+		<itemref idref="chapter-4.xhtml"/>
+		<itemref idref="chapter-5.xhtml"/>
+		<itemref idref="notes.xhtml"/>
+		<itemref idref="note-a.xhtml"/>
+		<itemref idref="note-b.xhtml"/>
+		<itemref idref="note-c.xhtml"/>
+		<itemref idref="note-d.xhtml"/>
+		<itemref idref="note-e.xhtml"/>
+		<itemref idref="note-f.xhtml"/>
+		<itemref idref="note-g.xhtml"/>
+		<itemref idref="supplemental-matter.xhtml"/>
+		<itemref idref="supplemental-matter-1.xhtml"/>
+		<itemref idref="supplemental-matter-2.xhtml"/>
+		<itemref idref="supplemental-matter-3.xhtml"/>
+		<itemref idref="supplemental-matter-4.xhtml"/>
+		<itemref idref="additional-notes.xhtml"/>
+		<itemref idref="additional-note-1.xhtml"/>
+		<itemref idref="additional-note-2.xhtml"/>
+		<itemref idref="additional-note-3.xhtml"/>
+		<itemref idref="additional-note-4.xhtml"/>
+		<itemref idref="additional-note-5.xhtml"/>
+		<itemref idref="additional-note-6.xhtml"/>
+		<itemref idref="additional-note-7.xhtml"/>
+		<itemref idref="additional-note-8.xhtml"/>
+		<itemref idref="endnotes.xhtml"/>
+		<itemref idref="colophon.xhtml"/>
+	</spine>
+</package>

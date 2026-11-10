@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% block title %}{{ book.title }}, by {{ book.author.name }} · {{ site.name }}{% endblock %}
+{% block body %}
+<header class="site-header"><div class="wrap bar">
+<a class="wordmark" href="{{ root }}{{ link('') }}">{{ site.name }}</a>
+<nav aria-label="Main" class="main-nav"><a href="{{ root }}{{ link('') }}">Library</a></nav>
+</div></header>
+
+<main class="wrap">
+<nav aria-label="Breadcrumb" class="breadcrumb">
+<a href="{{ root }}{{ link('') }}">Library</a><span aria-hidden="true">/</span><span>{{ path_name }}</span><span aria-hidden="true">/</span><span>{{ book.title }}</span>
+</nav>
+
+<section class="hero">
+{% if meta.cover.file %}<figure class="cover">
+<img src="cover.jpg" alt="{{ meta.cover.title }}, by {{ meta.cover.artist }}">
+<figcaption>{{ meta.cover.artist }}, <i>{{ meta.cover.title }}</i>, {{ meta.cover.year }}</figcaption>
+</figure>{% else %}<div class="cover cover-missing" role="img" aria-label="Cover art not yet chosen"><span>[PUBLIC-DOMAIN PAINTING]</span><span>Cover art not yet chosen for this book.</span></div>{% endif %}
+<div class="hero-text">
+<div class="eyebrow">{{ path_name }}</div>
+<h1>{{ book.title }}</h1>
+<div class="author">{{ book.author.name }}</div>
+{% if meta.edition.translator %}<div class="translator">Translated by {{ meta.edition.translator }}, {{ meta.edition.translation_year }}</div>{% endif %}
+<div class="meta">{{ 'First published' if meta.original.year is number else 'Written in the' }} {{ meta.original.year }}{% if book.words %} · {{ "{:,}".format(book.words) }} words{% endif %} · Public domain in the United States</div>
+<p class="description">{{ meta.description.text }}</p>
+<div class="actions">
+<a class="primary" href="{{ link(book.sections[0].slug) }}">Read online</a>
+{% if formats %}<span class="meta">or download</span>{% endif %}
+</div>
+<div class="formats">
+{% for f in formats %}<a href="downloads/{{ f.file }}">{{ f.label }}</a>{% endfor %}
+</div>
+</div>
+</section>
+
+<section class="split">
+<div class="contents" id="contents">
+<h2>Contents</h2>
+{% for group in book.contents %}
+{% if group.division %}<h3 class="division">{% if group.division.label %}<span class="ordinal">{{ group.division.label }}</span>{% endif %}{{ group.division.title }}</h3>{% endif %}
+<ol>
+{% for s in group.sections %}
+<li><span class="ordinal">{{ s.ordinal or '' }}</span><a href="{{ link(s.slug) }}">{{ s.title }}</a></li>
+{% endfor %}
+</ol>
+{% endfor %}
+</div>
+<aside class="edition">
+<h2>This edition</h2>
+<dl>
+<div><dt>Text</dt><dd>{{ meta.edition.source }}</dd></div>
+<div><dt>Transcription</dt><dd><a href="{{ meta.provenance.transcription_url }}">{{ meta.provenance.transcription_label or 'Standard Ebooks' }}</a>{% if meta.provenance.sources %}, drawing on {% for src in meta.provenance.sources %}<a href="{{ src.url }}">{{ src.label }}</a>{% if not loop.last %}, {% endif %}{% endfor %}{% endif %}</dd></div>
+<div><dt>Text standard</dt><dd>{{ meta.text_standard_note or ('Spelling, hyphenation and punctuation modernized' if meta.text_standard == 'modernized' else 'Not modernized') }}</dd></div>
+<div><dt>Rights</dt><dd>{{ meta.rights.note }}</dd></div>
+</dl>
+</aside>
+</section>
+
+{% if siblings %}
+<section class="also">
+<h2>Also in {{ path_name }}</h2>
+<div class="also-grid">
+{% for b in siblings %}
+<a href="{{ root }}{{ link(b.url) }}"><span class="also-title">{{ b.title }}</span><span class="meta">{{ b.author.name }} · {{ b.meta.original.year }}</span></a>
+{% endfor %}
+</div>
+</section>
+{% endif %}
+</main>
+
+<footer class="site-footer"><div class="wrap meta">{{ site.name }} · The texts are in the public domain · Site code and editorial matter: {{ site.licence }}</div></footer>
+{% endblock %}

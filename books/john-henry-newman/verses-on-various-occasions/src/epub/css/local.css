@@ -1,0 +1,289 @@
+@namespace epub "http://www.idpf.org/2007/ops";
+@namespace xml "http://www.w3.org/XML/1998/namespace";
+
+article{
+	break-after: page;
+}
+
+footer{
+	margin-top: 1em;
+	text-align: right;
+}
+
+[epub|type~="epigraph"]{
+	font-style: italic;
+	hyphens: none;
+	-epub-hyphens: none;
+}
+
+[epub|type~="epigraph"] i{
+	font-style: normal;
+}
+
+[epub|type~="epigraph"] cite{
+	font-style: normal;
+	font-variant: small-caps;
+	margin-top: 1em;
+}
+
+[epub|type~="epigraph"] cite i{
+	font-style: italic;
+}
+
+article > header [epub|type~="epigraph"]{
+	display: inline-block;
+	margin: auto;
+	max-width: 80%;
+	text-align: initial;
+}
+
+@supports(display: table){
+	article > header [epub|type~="epigraph"]{
+		display: table;
+	}
+}
+
+section[epub|type~="epigraph"]{
+	text-align: center;
+}
+
+section[epub|type~="epigraph"] > *{
+	display: inline-block;
+	margin: auto;
+	margin-top: 3em;
+	max-width: 80%;
+	text-align: initial;
+}
+
+@supports(display: flex){
+	section[epub|type~="epigraph"]{
+		align-items: center;
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		min-height: calc(98vh - 3em);
+		padding-top: 3em;
+	}
+
+	section[epub|type~="epigraph"] > *{
+		margin: 0;
+	}
+}
+
+#dedication header,
+#dedication > p:first-of-type,
+[epub|type~="z3998:signature"]{
+	font-variant: small-caps;
+}
+
+#dedication > p:first-of-type + p{
+	text-indent: 0;
+}
+
+[epub|type~="z3998:poem"] p,
+[epub|type~="z3998:verse"] p,
+[epub|type~="z3998:hymn"] p{
+	text-align: initial;
+	text-indent: 0;
+}
+
+[epub|type~="z3998:poem"] p + p,
+[epub|type~="z3998:verse"] p + p,
+[epub|type~="z3998:hymn"] p + p{
+	margin-top: 1em;
+}
+
+[epub|type~="z3998:poem"] p > span,
+[epub|type~="z3998:verse"] p > span,
+[epub|type~="z3998:hymn"] p > span{
+	display: block;
+	padding-left: 1em;
+	text-indent: -1em;
+}
+
+[epub|type~="z3998:poem"] p > span + br,
+[epub|type~="z3998:verse"] p > span + br,
+[epub|type~="z3998:hymn"] p > span + br{
+	display: none;
+}
+
+[epub|type~="z3998:poem"] footer,
+[epub|type~="z3998:hymn"] footer{
+	font-style: italic;
+	text-align: initial;
+}
+
+[epub|type~="z3998:poem"] footer time,
+[epub|type~="z3998:hymn"] footer time{
+	float: right;
+}
+
+p span.i1{
+	padding-left: 2em;
+	text-indent: -1em;
+}
+
+p span.i2{
+	padding-left: 3em;
+	text-indent: -1em;
+}
+
+p span.i3{
+	padding-left: 4em;
+	text-indent: -1em;
+}
+
+p span.i4{
+	padding-left: 5em;
+	text-indent: -1em;
+}
+
+p span.i5{
+	padding-left: 6em;
+	text-indent: -1em;
+}
+
+p span.i6{
+	padding-left: 7em;
+	text-indent: -1em;
+}
+
+p span.i7{
+	padding-left: 8em;
+	text-indent: -1em;
+}
+
+p span.i8{
+	padding-left: 9em;
+	text-indent: -1em;
+}
+
+p span.i10{
+	padding-left: 11em;
+	text-indent: -1em;
+}
+
+p span.i11{
+	padding-left: 12em;
+	text-indent: -1em;
+}
+
+p span.i12{
+	padding-left: 13em;
+	text-indent: -1em;
+}
+
+p span.i14{
+	padding-left: 15em;
+	text-indent: -1em;
+}
+
+p span.i16{
+	padding-left: 17em;
+	text-indent: -1em;
+}
+
+[epub|type~="z3998:hymn"] hgroup p,
+[epub|type~="z3998:poem"] hgroup p{
+	text-align: center;
+}
+
+[epub|type~="se:bridgehead"]{
+	display: inline-block;
+	font-style: italic;
+	max-width: 60%;
+	text-align: justify;
+	text-indent: 0;
+}
+
+[epub|type~="z3998:poem"] [epub|type~="se:bridgehead"],
+[epub|type~="z3998:hymn"] [epub|type~="se:bridgehead"]{
+	text-align: justify;
+}
+
+[epub|type~="se:bridgehead"] i{
+	font-style: normal;
+}
+
+figure{
+	break-inside: avoid;
+	margin: 1em 2.5em;
+}
+
+figure img{
+	display: block;
+	margin: auto;
+	max-height: 100vh;
+	max-width: 100%;
+}
+
+table{
+	margin: 1em auto;
+}
+
+table + p{
+	text-indent: 0;
+}
+
+blockquote[xml|lang]{
+	font-style: italic;
+}
+
+blockquote[xml|lang] em{
+	font-style: normal;
+}
+
+#dedication header{
+	margin: 4em auto;
+}
+
+#dedication footer p:first-of-type span:nth-of-type(1){
+	padding-left: 0;
+	padding-right: 3em;
+	text-indent: 2em;
+}
+
+#dedication footer p:first-of-type span:nth-of-type(2){
+	padding-left: 0;
+	padding-right: 2em;
+	text-indent: 1em;
+}
+
+#dedication footer p:last-of-type{
+	text-align: initial;
+	text-indent: 0;
+}
+
+#my-birthday section header p{
+	margin: 1em;
+	text-align: center;
+}
+
+#my-birthday section header + p{
+	margin: 0;
+}
+
+#the-month-of-mary div header p{
+	font-style: italic;
+	margin: 1em;
+	text-align: center;
+}
+
+#the-month-of-mary div > p{
+	padding-left: 1em;
+}
+
+#the-month-of-mary div + p{
+	margin-top: 1em;
+}
+
+#the-dream-of-gerontius div header p{
+	margin: 1em;
+	text-align: center;
+}
+
+#the-dream-of-gerontius ol{
+	margin: 0;
+	padding-left: 2em;
+}

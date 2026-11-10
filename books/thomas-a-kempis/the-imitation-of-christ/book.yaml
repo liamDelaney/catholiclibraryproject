@@ -1,0 +1,45 @@
+slug: the-imitation-of-christ
+author: thomas-a-kempis
+translator: william-benham
+path: medieval
+order: 3
+status: draft
+original:
+  year: "early 15th century"
+  language: la
+edition:
+  source: "[SOURCE EDITION AND YEAR: identify from the title page of the scan]"
+  translator: William Benham
+  translation_year: 1877
+rights:
+  basis: "Translation published before 1931"
+  checked: 2026-11-10
+  note: "Public domain in the United States. Readers elsewhere should check their own law."
+provenance:
+  transcription: standard-ebooks
+  transcription_url: "https://standardebooks.org/ebooks/thomas-a-kempis/the-imitation-of-christ/william-benham"
+  upstream_repository: "https://github.com/standardebooks/thomas-a-kempis_the-imitation-of-christ_william-benham"
+  upstream_commit: 106865bbd6d146a4a629c20613f3e51e8ddaed64
+  sources:
+    - {label: "Project Gutenberg", url: "https://www.gutenberg.org/ebooks/1653"}
+    - {label: "Internet Archive", url: "https://archive.org/details/imitationchrist07thomgoog"}
+    - {label: "Internet Archive (second scan)", url: "https://archive.org/details/dli.bengal.10689.16231"}
+text_standard: modernized
+addressing: chapter-paragraph
+cover:
+  file: images/cover.jpg
+  title: "Christ Carrying the Cross"
+  artist: "El Greco"
+  year: "1577-1587"
+  institution: "[MUSEUM: several versions of this painting exist; confirm which this is]"
+  source_url: "[URL]"
+  terms: "[TERMS]"
+description:
+  text: >-
+    The Imitation of Christ is a devotional manual on the interior life,
+    written in Latin in the early fifteenth century and traditionally
+    attributed to Thomas à Kempis. It is divided into four books: on the
+    spiritual life, on the inner life, on inward consolation, and on the
+    sacrament of the altar. This translation is by William Benham.
+  drafted_by: model
+  reviewed: null
