@@ -1,0 +1,34 @@
+slug: the-belief-of-catholics
+author: ronald-knox
+path: modern-letters
+order: 13
+status: draft
+# Trial: only Chapter I has been transcribed. The book is not complete.
+original:
+  year: 1927
+  language: en
+edition:
+  source: "Harper and Brothers, New York and London, 1927 (title page and copyright page of the scan)"
+rights:
+  basis: "Published in 1927; copyright page reads 'Copyright, 1927, by Ronald A. Knox'"
+  checked: 2026-11-10
+  note: "Public domain in the United States. Readers elsewhere should check their own law."
+provenance:
+  transcription: scan
+  transcription_label: "Proofed against the Internet Archive scan"
+  transcription_url: "https://archive.org/details/beliefofcatholic0000knox_h2r4"
+  converted_with: "tools/ingest/scan_text.py and tools/ingest/knox_belief_ch1.py, then Standard Ebooks tools 4.1.0"
+  proofed: "Chapter I, read once against the page images"
+  scan_url: "https://archive.org/details/beliefofcatholic0000knox_h2r4"
+text_standard: modernized
+addressing: chapter-paragraph
+cover:
+  file: null
+  title: "[PAINTING]"
+  artist: "[ARTIST]"
+  institution: "[MUSEUM]"
+  source_url: "[URL]"
+  terms: "[TERMS]"
+description:
+  drafted_by: model
+  reviewed: null

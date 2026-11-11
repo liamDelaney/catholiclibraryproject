@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" dir="ltr" prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#" unique-identifier="uid" version="3.0" xml:lang="en-US">
+	<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+		<dc:identifier id="uid">ronald-knox/the-belief-of-catholics</dc:identifier>
+		<dc:date>1900-01-01T00:00:00Z</dc:date>
+		<meta property="dcterms:modified">1900-01-01T00:00:00Z</meta>
+		<dc:rights>The source text in this ebook is believed to be in the United States public domain. It may still be copyrighted in other countries, so readers outside the United States must check their local laws before using this ebook.</dc:rights>
+		<meta property="rdf:type">http://schema.org/Book</meta>
+		<dc:publisher id="publisher">[SITE NAME]</dc:publisher>
+		<meta property="file-as" refines="#publisher">[SITE NAME]</meta>
+		<link href="[SITE URL]" refines="#publisher" rel="schema:url"/>
+		<link href="http://www.idpf.org/epub/a11y/accessibility-20170105.html#wcag-aa" rel="dcterms:conformsTo"/>
+		<meta property="a11y:certifiedBy">[SITE NAME]</meta>
+		<meta property="schema:accessMode">textual</meta>
+		<meta property="schema:accessModeSufficient">textual</meta>
+		<meta property="schema:accessibilityFeature">alternativeText</meta>
+		<meta property="schema:accessibilityFeature">displayTransformability</meta>
+		<meta property="schema:accessibilityFeature">readingOrder</meta>
+		<meta property="schema:accessibilityFeature">structuralNavigation</meta>
+		<meta property="schema:accessibilityFeature">tableOfContents</meta>
+		<meta property="schema:accessibilityHazard">none</meta>
+		<meta property="schema:accessibilitySummary">This publication conforms to WCAG 2.2 Level AA.</meta>
+		<dc:title id="title">The Belief of Catholics</dc:title>
+		<meta property="file-as" refines="#title">Belief of Catholics, The</meta>
+		<dc:subject id="subject-1">SUBJECT_1</dc:subject>
+		<dc:subject id="subject-2">SUBJECT_2</dc:subject>
+		<meta property="authority" refines="#subject-1">LCSH</meta>
+		<meta property="term" refines="#subject-1">SUBJECT_1_LCSH_ID</meta>
+		<meta property="authority" refines="#subject-2">LCSH</meta>
+		<meta property="term" refines="#subject-2">SUBJECT_2_LCSH_ID</meta>
+		<meta property="schema:abstract">The Belief of Catholics is an account of the grounds of Catholic belief and of the Catholic system as it is held and lived, written for the general reader.</meta>
+		<dc:description>
+			&lt;p&gt;The Belief of Catholics is an account of the grounds of Catholic belief and of the Catholic system as it is held and lived, written for the general reader. Knox wrote it in 1927 for the “What I Believe” series, in which writers of differing convictions each stated their own. It has a preface and nineteen chapters, of which the first is so far transcribed here.&lt;/p&gt;
+		</dc:description>
+		<dc:language>en-GB</dc:language>
+		
+		<dc:source>https://archive.org/details/beliefofcatholic0000knox_h2r4</dc:source>
+		<meta property="schema:wordCount">4482</meta>
+		<link href="EBOOK_WIKI_URL" rel="schema:sameAs"/>
+		<dc:creator id="author">Ronald Knox</dc:creator>
+		<meta property="file-as" refines="#author">Knox, Ronald</meta>
+		<meta property="schema:alternateName" refines="#author">CONTRIBUTOR_FULL_NAME</meta>
+		<link href="CONTRIBUTOR_WIKI_URL" refines="#author" rel="schema:sameAs"/>
+		<link href="CONTRIBUTOR_NACOAF_URI" refines="#author" rel="schema:sameAs"/>
+		<meta property="role" refines="#author" scheme="marc:relators">aut</meta>
+		<dc:contributor id="artist">COVER_ARTIST_NAME</dc:contributor>
+		<meta property="file-as" refines="#artist">COVER_ARTIST_SORT</meta>
+		<link href="COVER_ARTIST_WIKI_URL" refines="#artist" rel="schema:sameAs"/>
+		<link href="COVER_ARTIST_NACOAF_URI" refines="#artist" rel="schema:sameAs"/>
+		<meta property="role" refines="#artist" scheme="marc:relators">art</meta>
+		<dc:contributor id="producer-1">PRODUCER_NAME</dc:contributor>
+		<meta property="file-as" refines="#producer-1">PRODUCER_SORT</meta>
+		<link href="PRODUCER_URL" refines="#producer-1" rel="schema:url"/>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">bkp</meta>
+	</metadata>
+	<manifest>
+		<item href="css/core.css" id="core.css" media-type="text/css"/>
+		<item href="css/local.css" id="local.css" media-type="text/css"/>
+		<item href="images/cover.jpg" id="cover.jpg" media-type="image/jpeg" properties="cover-image"/>
+		<item href="text/chapter-1.xhtml" id="chapter-1.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/titlepage.xhtml" id="titlepage.xhtml" media-type="application/xhtml+xml"/>
+		<item href="toc.xhtml" id="toc.xhtml" media-type="application/xhtml+xml" properties="nav"/>
+	</manifest>
+	<spine>
+		<itemref idref="titlepage.xhtml"/>
+		<itemref idref="chapter-1.xhtml"/>
+	</spine>
+</package>

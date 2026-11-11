@@ -47,3 +47,13 @@ The Apologia was converted from Project Gutenberg HTML, not taken from Standard 
 Its spine order was set by hand. It keeps the print page numbers of the 1890 edition as
 empty spans (id="page-14", epub:type="pagebreak"), because Newman's notes cite pages; the
 site turns those citations into links. `se lint` objects to these spans.
+
+Scan-derived books (trial: Knox, The Belief of Catholics, Chapter I only):
+
+    tools/ingest/scan_text.py          text layer of a scanned PDF -> paragraphs, with page
+                                       markers and a report of suspect words and broken words
+    tools/ingest/knox_belief_ch1.py    every correction made to Chapter I, by kind, and the
+                                       XHTML it produces
+
+The corrections were made by reading each page image against the text. Words are never
+corrected from a dictionary alone.
