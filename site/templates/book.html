@@ -22,7 +22,7 @@
 <div class="author">{{ book.author.name }}</div>
 {% if meta.edition.translator %}<div class="translator">Translated by {{ meta.edition.translator }}, {{ meta.edition.translation_year }}</div>{% endif %}
 <div class="meta">{{ 'First published' if meta.original.year is number else 'Written in the' }} {{ meta.original.year }}{% if book.words %} · {{ "{:,}".format(book.words) }} words{% endif %} · Public domain in the United States</div>
-<p class="description">{{ meta.description.text }}</p>
+<p class="description">{{ book.description }}</p>
 <div class="actions">
 <a class="primary" href="{{ link(book.sections[0].slug) }}">Read online</a>
 {% if formats %}<span class="meta">or download</span>{% endif %}

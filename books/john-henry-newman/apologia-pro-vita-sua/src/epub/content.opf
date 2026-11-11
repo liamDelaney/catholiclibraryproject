@@ -4,13 +4,13 @@
 		<dc:identifier id="uid">john-henry-newman/apologia-pro-vita-sua</dc:identifier>
 		<dc:date>1900-01-01T00:00:00Z</dc:date>
 		<meta property="dcterms:modified">1900-01-01T00:00:00Z</meta>
-		<dc:rights>RIGHTS</dc:rights>
+		<dc:rights>The source text and artwork in this ebook are believed to be in the United States public domain; that is, they are believed to be free of copyright restrictions in the United States. They may still be copyrighted in other countries, so readers outside the United States must check their local laws before using this ebook.</dc:rights>
 		<meta property="rdf:type">http://schema.org/Book</meta>
-		<dc:publisher id="publisher">PUBLISHER_NAME</dc:publisher>
-		<meta property="file-as" refines="#publisher">PUBLISHER_SORT</meta>
-		<link href="PUBLISHER_URL" refines="#publisher" rel="schema:url"/>
+		<dc:publisher id="publisher">[SITE NAME]</dc:publisher>
+		<meta property="file-as" refines="#publisher">[SITE NAME]</meta>
+		<link href="[SITE URL]" refines="#publisher" rel="schema:url"/>
 		<link href="http://www.idpf.org/epub/a11y/accessibility-20170105.html#wcag-aa" rel="dcterms:conformsTo"/>
-		<meta property="a11y:certifiedBy">PUBLISHER_NAME</meta>
+		<meta property="a11y:certifiedBy">[SITE NAME]</meta>
 		<meta property="schema:accessMode">textual</meta>
 		<meta property="schema:accessModeSufficient">textual</meta>
 		<meta property="schema:accessibilityFeature">alternativeText</meta>
@@ -28,9 +28,9 @@
 		<meta property="term" refines="#subject-1">SUBJECT_1_LCSH_ID</meta>
 		<meta property="authority" refines="#subject-2">LCSH</meta>
 		<meta property="term" refines="#subject-2">SUBJECT_2_LCSH_ID</meta>
-		<meta property="schema:abstract">ABSTRACT</meta>
+		<meta property="schema:abstract">Apologia Pro Vita Sua is Newman’s history of his religious opinions, from his childhood to his reception into the Catholic Church in 1845.</meta>
 		<dc:description>
-			DESCRIPTION
+			&lt;p&gt;Apologia Pro Vita Sua is Newman’s history of his religious opinions, from his childhood to his reception into the Catholic Church in 1845. He wrote it in 1864 in reply to Charles Kingsley, who had charged him with indifference to truth. This edition has a preface, five chapters, seven notes, supplemental matter and eight additional notes.&lt;/p&gt;
 		</dc:description>
 		<dc:language>en-GB</dc:language>
 		<dc:source>https://www.gutenberg.org/ebooks/22088</dc:source>
@@ -73,6 +73,7 @@
 		<item href="text/chapter-5.xhtml" id="chapter-5.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/colophon.xhtml" id="colophon.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/endnotes.xhtml" id="endnotes.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/halftitlepage.xhtml" id="halftitlepage.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/note-a.xhtml" id="note-a.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/note-b.xhtml" id="note-b.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/note-c.xhtml" id="note-c.xhtml" media-type="application/xhtml+xml"/>
@@ -93,6 +94,7 @@
 	<spine>
 		<itemref idref="titlepage.xhtml"/>
 		<itemref idref="preface.xhtml"/>
+		<itemref idref="halftitlepage.xhtml"/>
 		<itemref idref="chapter-1.xhtml"/>
 		<itemref idref="chapter-2.xhtml"/>
 		<itemref idref="chapter-3.xhtml"/>

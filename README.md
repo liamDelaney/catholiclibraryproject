@@ -19,9 +19,16 @@ is the source tree zipped; for release, build with the Standard Ebooks tools.
 AZW3 is added when Calibre's ebook-convert is installed. PDF and KEPUB are not
 built yet.
 
-Not yet done: the OPF still carries the Standard Ebooks identifier, publisher and
-description, and uncopyright.xhtml is unchanged. Both wait on the site's name and
-licence. Paragraph ids are not assigned, because the book's status is draft.
+All four books are white-label in the Standard Ebooks sense: no imprint, Uncopyright
+page, logo or se.css, and an identifier of the form author/work[/translator]. The
+Standard Ebooks tools (se lint, se build-toc, se clean) treat them accordingly. Each
+book's description lives in its content.opf; book.yaml records who drafted and reviewed it.
+
+Known linter errors that are accepted for now: the cover size (cover art is not chosen),
+the author-link rule for descriptions, the Apologia's page anchors (s-010, x-018, x-019,
+s-050) and its placeholder metadata.
+
+Paragraph and line ids are not assigned, because every book's status is draft.
 
 Endnotes are shown at the foot of the section that calls them, keeping the book-wide
 numbers of the source. Divisions (the four books of the Imitation) are headings in the

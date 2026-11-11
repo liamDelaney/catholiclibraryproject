@@ -4,7 +4,9 @@
 Usage: python3 tools/assign_ids.py books/<author>/<book>
 
 Each top-level section or article of a text file is one page of the site, and
-is numbered on its own.
+is numbered on its own. Where one file holds several of them, each id is
+written with its section's id in front (solitude-l-3) so that ids stay unique
+in the file; the site build shows it as l-3 on that poem's page.
 
   Prose: every paragraph and block quotation directly inside the section gets
   id="p-N", by position.
@@ -34,7 +36,7 @@ APPARATUS = {"titlepage", "imprint", "halftitlepage", "colophon", "copyright-pag
 
 
 def number(elements, prefix):
-    pattern = re.compile(rf"{prefix}-(\d+)[a-z]?")
+    pattern = re.compile(rf"{re.escape(prefix)}-(\d+)[a-z]?")
     used = [int(m.group(1)) for el in elements if (m := pattern.fullmatch(el.get("id", "")))]
     n, added = max(used, default=0), 0
     for el in elements:
@@ -59,14 +61,18 @@ def main(book_dir):
         tree = etree.parse(str(path))
         body = tree.find(f".//{{{XHTML}}}body")
         added = kept = 0
-        for section in [el for el in body if el.tag in TOPS]:
+        tops = [el for el in body if el.tag in TOPS]
+        for section in tops:
             kinds = (section.get(TYPE) or "").split()
             if kinds and kinds[0] in APPARATUS:
                 continue
+            # Ids must be unique in the file. Where a file holds several sections, each id
+            # carries its section's id as a prefix; the site build removes it again.
+            scope = f"{section.get('id')}-" if len(tops) > 1 else ""
             if "z3998:poem" in kinds:
-                elements, prefix = lines(section), "l"
+                elements, prefix = lines(section), f"{scope}l"
             else:
-                elements, prefix = [el for el in section if el.tag in BLOCKS], "p"
+                elements, prefix = [el for el in section if el.tag in BLOCKS], f"{scope}p"
             a = number(elements, prefix)
             added += a
             kept += len(elements) - a

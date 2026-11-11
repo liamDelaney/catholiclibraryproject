@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://www.idpf.org/2007/opf" dir="ltr" prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#" unique-identifier="uid" version="3.0" xml:lang="en-US">
 	<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
-		<dc:identifier id="uid">https://standardebooks.org/ebooks/thomas-a-kempis/the-imitation-of-christ/william-benham</dc:identifier>
+		<dc:identifier id="uid">thomas-a-kempis/the-imitation-of-christ/william-benham</dc:identifier>
 		<dc:date>2021-07-08T00:19:21Z</dc:date>
 		<meta property="dcterms:modified">2021-07-08T00:19:21Z</meta>
-		<dc:rights>The source text and artwork in this ebook are believed to be in the United States public domain; that is, they are believed to be free of copyright restrictions in the United States. They may still be copyrighted in other countries, so users located outside of the United States must check their local laws before using this ebook. The creators of, and contributors to, this ebook dedicate their contributions to the worldwide public domain via the terms in the [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/).</dc:rights>
+		<dc:rights>The source text and artwork in this ebook are believed to be in the United States public domain; that is, they are believed to be free of copyright restrictions in the United States. They may still be copyrighted in other countries, so readers outside the United States must check their local laws before using this ebook.</dc:rights>
 		<meta property="rdf:type">http://schema.org/Book</meta>
-		<dc:publisher id="publisher">Standard Ebooks</dc:publisher>
-		<meta property="file-as" refines="#publisher">Standard Ebooks</meta>
-		<link href="https://standardebooks.org/" refines="#publisher" rel="schema:url"/>
+		<dc:publisher id="publisher">[SITE NAME]</dc:publisher>
+		<meta property="file-as" refines="#publisher">[SITE NAME]</meta>
+		<link href="[SITE URL]" refines="#publisher" rel="schema:url"/>
 		<meta property="role" refines="#publisher" scheme="marc:relators">bkd</meta>
 		<meta property="role" refines="#publisher" scheme="marc:relators">mdc</meta>
 		<meta property="role" refines="#publisher" scheme="marc:relators">pbl</meta>
@@ -17,7 +17,7 @@
 		<link href="https://www.theleagueofmoveabletype.com/" refines="#type-designer" rel="schema:url"/>
 		<meta property="role" refines="#type-designer" scheme="marc:relators">tyd</meta>
 		<meta id="conformance-statement" property="dcterms:conformsTo">EPUB Accessibility 1.1 - WCAG 2.2 Level AA</meta>
-		<meta property="a11y:certifiedBy" refines="#conformance-statement">Standard Ebooks</meta>
+		<meta property="a11y:certifiedBy" refines="#conformance-statement">[SITE NAME]</meta>
 		<meta property="schema:accessMode">textual</meta>
 		<meta property="schema:accessModeSufficient">textual</meta>
 		<meta property="schema:accessibilityFeature">alternativeText</meta>
@@ -42,9 +42,9 @@
 		<meta property="term" refines="#subject-3">sh2008107677</meta>
 		<meta property="schema:genre">Nonfiction</meta>
 		<meta property="schema:genre">Spirituality</meta>
-		<meta property="schema:abstract">Thomas à Kempis provides instructions for a Christian spiritual life.</meta>
+		<meta property="schema:abstract">The Imitation of Christ is a devotional manual on the interior life, written in Latin in the early fifteenth century and traditionally attributed to Thomas à Kempis.</meta>
 		<dc:description>
-			&lt;p&gt;&lt;i&gt;The Imitation of Christ&lt;/i&gt; is a Christian devotional book dating to the early 15th century, originally written anonymously but popularly attributed to &lt;a href="https://standardebooks.org/ebooks/thomas-a-kempis"&gt;Thomas à Kempis&lt;/a&gt;. A popular piece of religious literature since it was first circulated, the &lt;i&gt;Imitation&lt;/i&gt; is divided into four books that instruct the reader to forego worldly goods, to follow Christ, and to receive the sacrament of Communion, all in order to attain spiritual peace. Admired by numerous Christian theologians and mystics throughout the course of centuries, it is today considered to be the most-read Christian devotional work besides the Bible, going through over 745 printings before 1650. The &lt;i&gt;Imitation&lt;/i&gt; even found an audience in India with the 19th-century Hindu philosopher-monk Ramakrishna, who cherished it along with the &lt;i&gt;Bhagavad Gita&lt;/i&gt; as one of his favorite books.&lt;/p&gt;
+			&lt;p&gt;The Imitation of Christ is a devotional manual on the interior life, written in Latin in the early fifteenth century and traditionally attributed to Thomas à Kempis. It is divided into four books: on the spiritual life, on the inner life, on inward consolation, and on the sacrament of the altar. This translation is by William Benham.&lt;/p&gt;
 		</dc:description>
 		<dc:language>en-GB</dc:language>
 		<dc:source>https://www.gutenberg.org/ebooks/1653</dc:source>
@@ -53,9 +53,6 @@
 		<meta property="schema:wordCount">62787</meta>
 		<meta property="schema:educationalLevel">65.96</meta>
 		<link href="https://en.wikipedia.org/wiki/The_Imitation_of_Christ" rel="schema:sameAs"/>
-		<meta id="vcs-repository" property="schema:workExample">schema:workExample</meta>
-		<meta property="rdf:type" refines="#vcs-repository">http://schema.org/SoftwareSourceCode</meta>
-		<link href="https://github.com/standardebooks/thomas-a-kempis_the-imitation-of-christ_william-benham" refines="#vcs-repository" rel="schema:codeRepository"/>
 		<dc:creator id="author">Thomas à Kempis</dc:creator>
 		<meta property="file-as" refines="#author">à Kempis, Thomas</meta>
 		<link href="https://en.wikipedia.org/wiki/Thomas_%C3%A0_Kempis" refines="#author" rel="schema:sameAs"/>
@@ -102,9 +99,7 @@
 	<manifest>
 		<item href="css/core.css" id="core.css" media-type="text/css"/>
 		<item href="css/local.css" id="local.css" media-type="text/css"/>
-		<item href="css/se.css" id="se.css" media-type="text/css"/>
 		<item href="images/cover.svg" id="cover.svg" media-type="image/svg+xml" properties="cover-image"/>
-		<item href="images/logo.svg" id="logo.svg" media-type="image/svg+xml"/>
 		<item href="images/titlepage.svg" id="titlepage.svg" media-type="image/svg+xml"/>
 		<item href="text/book-1.xhtml" id="book-1.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/book-2.xhtml" id="book-2.xhtml" media-type="application/xhtml+xml"/>
@@ -224,19 +219,16 @@
 		<item href="text/chapter-4-16.xhtml" id="chapter-4-16.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/chapter-4-17.xhtml" id="chapter-4-17.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/chapter-4-18.xhtml" id="chapter-4-18.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/colophon.xhtml" id="colophon.xhtml" media-type="application/xhtml+xml" properties="svg"/>
+		<item href="text/colophon.xhtml" id="colophon.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/dedication.xhtml" id="dedication.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/endnotes.xhtml" id="endnotes.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/halftitlepage.xhtml" id="halftitlepage.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/imprint.xhtml" id="imprint.xhtml" media-type="application/xhtml+xml" properties="svg"/>
 		<item href="text/preface.xhtml" id="preface.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/titlepage.xhtml" id="titlepage.xhtml" media-type="application/xhtml+xml" properties="svg"/>
-		<item href="text/uncopyright.xhtml" id="uncopyright.xhtml" media-type="application/xhtml+xml"/>
 		<item href="toc.xhtml" id="toc.xhtml" media-type="application/xhtml+xml" properties="nav"/>
 	</manifest>
 	<spine>
 		<itemref idref="titlepage.xhtml"/>
-		<itemref idref="imprint.xhtml"/>
 		<itemref idref="dedication.xhtml"/>
 		<itemref idref="preface.xhtml"/>
 		<itemref idref="halftitlepage.xhtml"/>
@@ -360,6 +352,5 @@
 		<itemref idref="chapter-4-18.xhtml"/>
 		<itemref idref="endnotes.xhtml"/>
 		<itemref idref="colophon.xhtml"/>
-		<itemref idref="uncopyright.xhtml"/>
 	</spine>
 </package>

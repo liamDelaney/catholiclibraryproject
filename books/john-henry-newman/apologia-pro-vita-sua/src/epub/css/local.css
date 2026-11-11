@@ -5,3 +5,38 @@ section[epub|type~="titlepage"] p{
 	text-align: center;
 	text-indent: 0;
 }
+
+/* Begin verse CSS */
+[epub|type~="z3998:verse"] p{
+	text-align: initial;
+	text-indent: 0;
+}
+
+[epub|type~="z3998:verse"] p > span{
+	display: block;
+	padding-left: 1em;
+	text-indent: -1em;
+}
+
+[epub|type~="z3998:verse"] p > span + br{
+	display: none;
+}
+
+p span.i4{
+	padding-left: 5em;
+	text-indent: -1em;
+}
+/* End verse CSS */
+
+table{
+	font-variant-numeric: tabular-nums;
+	margin: 1em auto;
+}
+
+td{
+	padding: 0 1em;
+}
+
+abbr[epub|type~="se:era"]{
+	font-variant: all-small-caps;
+}

@@ -8,6 +8,11 @@ This is a one-off: it encodes what was learned by reading this particular file.
 It is kept so the conversion can be audited and repeated. It changes no wording
 except the corrections listed in CORRECTIONS. Typography, spelling and semantics
 are left to the Standard Ebooks tools, which are run afterwards.
+
+After those tools have run, three things were done by hand and are not in this
+script: se modernize-spelling rewrote the id of note-d as "noted", which was put
+back; headings in the appendices were moved down one level, because they sit
+under a division; and the spine order was set by hand.
 """
 import re
 import sys
@@ -248,7 +253,10 @@ class Converter:
                 if re.fullmatch(r"\d+\.", text):
                     self.open_sub(E("h3", text.rstrip("."), type="z3998:ordinal"))
                 else:
-                    self.open_sub(E("h3", title(re.sub(r"\.—", ". ", text)), type="title"))
+                    # "II.—THE ACADEMIA ..." keeps its numeral; only the words are title-cased.
+                    m = re.fullmatch(r"([IVX]+(?:\. AND [IVX]+)?)\.?—?\s*(.*)", text)
+                    numeral = m.group(1).replace(". AND ", " and ")
+                    self.open_sub(E("h3", f"{numeral}. {title(m.group(2))}", type="title"))
                 continue
 
             if el.tag == "hr":
@@ -287,7 +295,7 @@ class Converter:
         endnotes.append(E("h2", "Endnotes", type="title"))
         ol = self.add(endnotes, E("ol"))
         for n, (pg_id, slug) in enumerate(self.refs, 1):
-            li = self.add(ol, E("li", id=f"note-{n}", type="endnote"))
+            li = self.add(ol, E("li", id=f"note-{n}"))
             for block in self.notes[pg_id]:
                 li.append(block)
             last = li[-1]

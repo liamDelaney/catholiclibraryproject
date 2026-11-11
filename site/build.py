@@ -142,6 +142,13 @@ def read_section(section, notes, doc_title, lang):
                 a.set("href", f"../{link(m.group(1))}{m.group(2) or ''}")
 
     retarget(section)
+    # In a file that holds several sections, paragraph and line ids carry the section's id
+    # as a prefix so that they are unique in the file. On the site each section is its own
+    # page, so the prefix comes off: solitude-l-3 is addressed as #l-3.
+    for el in section.iter():
+        m = re.fullmatch(rf"{re.escape(slug)}-([pl]-\d+[a-z]?)", el.get("id") or "")
+        if m:
+            el.set("id", m.group(1))
     called = []
     for ref in section.iter(f"{{{XHTML}}}a"):
         if "noteref" in types(ref):
@@ -220,6 +227,8 @@ def read_book(book_dir, authors):
 
     author = authors[meta["author"]]
     words = opf.findtext(".//opf:meta[@property='schema:wordCount']", namespaces=NS)
+    description = re.sub(r"<[^>]+>", "", opf.findtext(".//dc:description", namespaces=NS) or "")
+    description = " ".join(description.split())
     url = f"{author['slug']}/{meta['slug']}"
     if meta.get("translator"):
         url += f"/{meta['translator']}"
@@ -229,6 +238,7 @@ def read_book(book_dir, authors):
         "title": opf.findtext(".//dc:title", namespaces=NS),
         "author": author,
         "words": int(words) if words and words.isdigit() else None,
+        "description": description,
         "sections": sections,
         "contents": contents,
         "url": url,
