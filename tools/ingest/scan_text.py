@@ -41,14 +41,19 @@ def main(pdf, first, last, out, corpus):
         lines = [l for l in page_lines(pdf, n) if l.strip()]
         if not lines:
             continue
-        # The first line of a page is its running head with the page number, except on
-        # a chapter's opening page, where the heading lines are centred and far indented.
-        head = lines[0].strip()
-        m = re.fullmatch(r"(\S{1,4})\s{2,}(.+)|(.+?)\s{2,}(\S{1,4})", head)
+        # A page opens with its running head: the book or chapter title in capitals with the
+        # page number. A speck above it is sometimes read as a line of its own, so the head
+        # is looked for among the first three lines, and anything above it goes with it.
         printed = None
-        if m:
-            printed = m.group(1) or m.group(4)
-            lines = lines[1:]
+        for k, line in enumerate(lines[:3]):
+            letters = [ch for ch in line if ch.isalpha()]
+            if len(letters) >= 10 and sum(ch.isupper() for ch in letters) / len(letters) > 0.8 and "CHAPTER" not in line:
+                m = re.search(r"^\s*(\d{1,3})\b|\b(\d{1,3})\s*$", line)
+                printed = (m.group(1) or m.group(2)) if m else "?"
+                lines = lines[k + 1:]
+                break
+        if not lines:
+            continue
         # The left margin is where most lines begin; a stray mark in the margin must not move it.
         indents = Counter(len(l) - len(l.lstrip()) for l in lines)
         base = indents.most_common(1)[0][0]

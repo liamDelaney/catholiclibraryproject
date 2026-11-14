@@ -3,7 +3,7 @@ author: ronald-knox
 path: modern-letters
 order: 13
 status: draft
-# Trial: only Chapter I has been transcribed. The book is not complete.
+# First-pass transcription. Not yet proofed to publication standard: see provenance.proofed.
 original:
   year: 1927
   language: en
@@ -17,8 +17,8 @@ provenance:
   transcription: scan
   transcription_label: "Proofed against the Internet Archive scan"
   transcription_url: "https://archive.org/details/beliefofcatholic0000knox_h2r4"
-  converted_with: "tools/ingest/scan_text.py and tools/ingest/knox_belief_ch1.py, then Standard Ebooks tools 4.1.0"
-  proofed: "Chapter I, read once against the page images"
+  converted_with: "tools/ingest/collate.py, scan_build.py and knox_belief.py (Chapter I: scan_text.py and knox_belief_ch1.py), then Standard Ebooks tools 4.1.0"
+  proofed: "Chapter I read against every page image. The preface and Chapters II to XIX collated from three machine readings, with about 340 questions settled by a reader, mostly from the other readings and the sense; 13 pages looked at. A three-page audit found two to three small errors per thousand words remaining."
   scan_url: "https://archive.org/details/beliefofcatholic0000knox_h2r4"
 text_standard: modernized
 addressing: chapter-paragraph

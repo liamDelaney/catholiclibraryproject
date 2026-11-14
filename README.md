@@ -48,12 +48,18 @@ Its spine order was set by hand. It keeps the print page numbers of the 1890 edi
 empty spans (id="page-14", epub:type="pagebreak"), because Newman's notes cite pages; the
 site turns those citations into links. `se lint` objects to these spans.
 
-Scan-derived books (trial: Knox, The Belief of Catholics, Chapter I only):
+Scan-derived books (Knox, The Belief of Catholics):
 
-    tools/ingest/scan_text.py          text layer of a scanned PDF -> paragraphs, with page
-                                       markers and a report of suspect words and broken words
-    tools/ingest/knox_belief_ch1.py    every correction made to Chapter I, by kind, and the
-                                       XHTML it produces
+    tools/ingest/scan_text.py          text layer of a scanned PDF -> paragraphs, with page markers
+    tools/ingest/collate.py            collates three machine readings of the scan (the PDF's own
+                                       text layer and two fresh tesseract readings, one per engine),
+                                       corrects what independent readings agree on, and numbers
+                                       the questions that remain
+    tools/ingest/scan_build.py         applies a reader's answers and writes each section as XHTML
+    tools/ingest/knox_belief.py        the answers and further corrections for Knox
+    tools/ingest/knox_belief_ch1.py    Chapter I, which was proofed page by page instead
 
-The corrections were made by reading each page image against the text. Words are never
-corrected from a dictionary alone.
+The fresh readings are made with: pdftoppm -r 300 -gray, then tesseract --psm 4, once with
+the default engine and once with --oem 0 and the tessdata (not tessdata_fast) English model.
+Knox is a first-pass text. Italics are restored only where a reading stumbled on them, and
+an audit of three pages found two to three small errors per thousand words still in place.
